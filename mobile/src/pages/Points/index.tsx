@@ -18,6 +18,7 @@ interface Point {
     id: number;
     name: string;
     image: string;
+    image_url: string;
     latitude: number;
     longitude: number;
 }
@@ -129,7 +130,7 @@ const Points = () => {
                                     }}>
                                     <View style={styles.mapMarkerContainer}>
                                         <Image style={styles.mapMarkerImage} source={{
-                                            uri:point.image,
+                                            uri: point.image_url,
                                         }} />
                                         <Text style={styles.mapMarkerTitle}>{point.name}</Text>
                                     </View>
@@ -224,7 +225,8 @@ const styles = StyleSheet.create({
         fontFamily: 'Roboto_400Regular',
         color: '#FFF',
         fontSize: 13,
-        lineHeight: 23,
+        textAlign: 'center',
+        lineHeight: 13,
     },
 
     itemsContainer: {
