@@ -58,7 +58,7 @@ Into your terminal, open backend directory with ``` cd server ``` then execute `
  In a similar way that was done to backend,  change to ``` web ```  directory then ``` npm install ``` to install dependencies. Start the app by running ``` npm start ``` command. Frontend application will run into your localhost at port 3000 (http://localhost:3000) 
  
 #### 3.3 Mobile
-If you doesn\`t installed [Expo-CLI](#prerequisites) yet, do it. Open ``` mobile ``` folder and also install dependencies with ``` npm install ```. Run Expo with ``` npm start ```. This will open an Expo development tab into your browser that contains a QR Code. Download Expo app into your phone. Open it and scan the QR Code. If it doesn\`t load Ecoleta app, switch from "LAN" to "Tunnel" option in the Expo browser tab and try scanning again.
+If you don't installed [Expo-CLI](#prerequisites) yet, do it. Open ``` mobile ``` folder and also install dependencies with ``` npm install ```. Run Expo with ``` npm start ```. This will open an Expo development tab into your browser that contains a QR Code. Download Expo app into your phone. Open it and scan the QR Code. If it doesn\`t load Ecoleta app, switch from "LAN" to "Tunnel" option in the Expo browser tab and then try scanning again.
 
 ##### Important Note: Replace "BaseURL" property [mobile/src/services/api.ts](https://github.com/guilhermeomt/nlw-ecoleta/blob/master/mobile/src/services/api.ts) to your local machine IP address at 3001 port (backend) so your mobile connected in LAN can access the API. I used [Serveo](http://serveo.net/) and you should too in case you simply can\`t connect even with your mobile and backend in the same local network.
 ##### TL;DR
